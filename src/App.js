@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Footer from './Pages/Shared/Footer/Footer';
 import Property from './Pages/PropertyPage/Property/Property';
+import Agent from './Pages/AgentPage/Agent/Agent';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/property">
             <Property></Property>
+          </Route>
+          <Route path="/agents">
+            <Agent></Agent>
           </Route>
 
         </Switch>
