@@ -9,6 +9,7 @@ import {
 import Footer from './Pages/Shared/Footer/Footer';
 import Property from './Pages/PropertyPage/Property/Property';
 import Agent from './Pages/AgentPage/Agent/Agent';
+import Contact from './Pages/ContactPage/Contact/Contact';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/agents">
             <Agent></Agent>
+          </Route>
+          <Route path="/contacts">
+            <Contact></Contact>
           </Route>
 
         </Switch>
