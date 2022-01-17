@@ -10,6 +10,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Property from './Pages/PropertyPage/Property/Property';
 import Agent from './Pages/AgentPage/Agent/Agent';
 import Contact from './Pages/ContactPage/Contact/Contact';
+import MorePropertyDetails from './Pages/PropertyPage/MorePropertyDetails/MorePropertyDetails';
 
 function App() {
   return (
@@ -25,8 +26,14 @@ function App() {
           <Route path="/footer">
             <Footer></Footer>
           </Route>
-          <Route path="/property">
+          <Route path="/Property">
             <Property></Property>
+          </Route>
+          <Route path="/PropertyDetails/:property_id">
+            <MorePropertyDetails></MorePropertyDetails>
+          </Route>
+          <Route path="/agents">
+            <Agent></Agent>
           </Route>
           <Route path="/agents">
             <Agent></Agent>

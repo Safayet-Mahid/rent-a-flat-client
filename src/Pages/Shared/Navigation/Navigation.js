@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
-const pages = ['Home+', 'Property+', "About+", 'Blog+', "Contacts"];
+const pages = ['Home', 'Property', "About", 'Blog', "Contacts"];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navigation = () => {
@@ -78,10 +78,11 @@ const Navigation = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Link to="/property" textAlign="center">{page}</Link>
-                                </MenuItem>
-                            ))}
+
+
+                                <MenuItem MenuItem key={page} onClick={handleCloseNavMenu} >
+                                    <Link to={`/${page}`} textAlign="center">{page}</Link>
+                                </MenuItem>))}
                         </Menu>
                     </Box>
                     <Typography
@@ -136,7 +137,7 @@ const Navigation = () => {
                     </Box>
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBar >
     );
 };
 export default Navigation;
